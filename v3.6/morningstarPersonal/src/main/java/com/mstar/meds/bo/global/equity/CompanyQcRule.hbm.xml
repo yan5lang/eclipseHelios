@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-Aug-2012 5:08:33 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.mstar.meds.bo.global.equity.CompanyQcRule" table="COMPANYQCRULE">
+        <id name="fileId" type="java.lang.Integer">
+            <column name="FILEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="ruleId" type="java.lang.Integer">
+            <column name="RULEID" />
+        </property>
+        <property name="templateClass" type="java.lang.Integer">
+            <column name="TEMPLATECLASS" />
+        </property>
+        <property name="ruleLevel" type="java.lang.Integer">
+            <column name="RULELEVEL" />
+        </property>
+        <property name="levelId" type="java.lang.String">
+            <column name="LEVELID" />
+        </property>
+        <property name="tableType" type="java.lang.String">
+            <column name="TABLETYPE" />
+        </property>
+        <property name="reportType" type="java.lang.Integer">
+            <column name="REPORTTYPE" />
+        </property>
+        <property name="numOfMonth" type="java.lang.String">
+            <column name="NUMOFMONTH" />
+        </property>
+        <property name="warningLevel" type="java.lang.Integer">
+            <column name="WARNINGLEVEL" />
+        </property>
+        <property name="keyDataPoint" type="java.lang.String">
+            <column name="KEYDATAPOINT" />
+        </property>
+        <property name="qualityControlId" type="java.lang.String">
+            <column name="QUALITYCONTROLID" />
+        </property>
+        <property name="threshold" type="java.lang.String">
+            <column name="THRESHOLD" />
+        </property>
+        <property name="ruleType" type="java.lang.Integer">
+            <column name="RULETYPE" />
+        </property>
+        <property name="ruleExpression" type="java.lang.String">
+            <column name="RULEEXPRESSION" />
+        </property>
+        <property name="error" type="java.lang.String">
+            <column name="ERROR" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="creatorId" type="java.lang.Integer">
+            <column name="CREATORID" />
+        </property>
+        <property name="createDate" type="java.util.Date">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="updaterId" type="java.lang.Integer">
+            <column name="UPDATERID" />
+        </property>
+        <property name="updateDate" type="java.util.Date">
+            <column name="UPDATEDATE" />
+        </property>
+        <property name="isValid" type="java.lang.Integer">
+            <column name="ISVALID" />
+        </property>
+        <property name="qcStatus" type="java.lang.Integer">
+            <column name="QCSTATUS" />
+        </property>
+        <property name="hpAndMs" type="java.lang.String">
+            <column name="HPANDMS" />
+        </property>
+        <property name="reportStyle" type="java.lang.Integer">
+            <column name="REPORTSTYLE" />
+        </property>
+        <property name="fileSource" type="java.lang.String">
+            <column name="FILESOURCE" />
+        </property>
+        <property name="qcResult" type="java.lang.String">
+            <column name="QCRESULT" />
+        </property>
+        <property name="notes" type="java.lang.String">
+            <column name="NOTES" />
+        </property>
+    </class>
+</hibernate-mapping>

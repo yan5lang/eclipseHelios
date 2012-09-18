@@ -1,0 +1,104 @@
+<object-stream>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Hello World [131]</activationId>
+  <rule>Hello World</rule>
+  <declarations>myMessage=Hello World(131); m=com.sample.DroolsTest$Message@3228a1(131)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>131</factId>
+  <objectToString>com.sample.DroolsTest$Message@3228a1</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>132</factId>
+  <objectToString>com.sample.Customer@10980e7</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>rule1 [133]</activationId>
+  <rule>rule1</rule>
+  <declarations>customer=com.sample.Customer@edbe39(133)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>133</factId>
+  <objectToString>com.sample.Customer@edbe39</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>134</factId>
+  <objectToString>com.sample.Customer@639bf1</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>rule1 [135]</activationId>
+  <rule>rule1</rule>
+  <declarations>customer=com.sample.Customer@1931579(135)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>135</factId>
+  <objectToString>com.sample.Customer@1931579</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>rule1 [135]</activationId>
+  <rule>rule1</rule>
+  <declarations>customer=com.sample.Customer@1931579(135)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>rule1 [135]</activationId>
+  <rule>rule1</rule>
+  <declarations>customer=com.sample.Customer@1931579(135)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>rule1 [133]</activationId>
+  <rule>rule1</rule>
+  <declarations>customer=com.sample.Customer@edbe39(133)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>rule1 [133]</activationId>
+  <rule>rule1</rule>
+  <declarations>customer=com.sample.Customer@edbe39(133)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Hello World [131]</activationId>
+  <rule>Hello World</rule>
+  <declarations>myMessage=Hello World(131); m=com.sample.DroolsTest$Message@3228a1(131)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>GoodBye [131]</activationId>
+  <rule>GoodBye</rule>
+  <declarations>myMessage=Goodbye cruel world(131)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>131</factId>
+  <objectToString>com.sample.DroolsTest$Message@3228a1</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Hello World [131]</activationId>
+  <rule>Hello World</rule>
+  <declarations>myMessage=Goodbye cruel world(131); m=com.sample.DroolsTest$Message@3228a1(131)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>GoodBye [131]</activationId>
+  <rule>GoodBye</rule>
+  <declarations>myMessage=Goodbye cruel world(131)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>GoodBye [131]</activationId>
+  <rule>GoodBye</rule>
+  <declarations>myMessage=Goodbye cruel world(131)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+</object-stream>

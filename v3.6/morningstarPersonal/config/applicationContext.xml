@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+ <bean id="helloWorld" class="com.demo.spring.test.HelloWorld"/>
+ 
+ <bean id="myBeforeAdvice" class="com.demo.spring.aop.MyBeforeAdvice"/>
+ <bean id="myAroundAdvice" class="com.demo.spring.aop.MyAroundAdvice"/>
+ <bean id="myThrowsAdvice" class="com.demo.spring.aop.MyThrowsAdvice"/>
+ <bean id="myAfterAdvice" class="com.demo.spring.aop.MyAfterAdvice"/>
+ 
+ 
+ <bean id="myBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+          <property name="patterns">
+                   <list>
+                            <value>com\.demo\.spring\.test\.IHelloWorld\.execute</value>
+                   </list>
+          </property>
+          <property name="advice">
+                     <ref local="myBeforeAdvice" />
+          </property>
+ </bean>
+ <bean id="myAroundAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+            <property name="patterns">
+                      <list>
+                             <value>com\.demo\.spring\.test\.IHelloWorld\.execute</value>
+                     </list>
+           </property>
+           <property name="advice">
+                      <ref local="myAroundAdvice" />
+           </property>
+ </bean>
+ <bean id="myThrowsAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+              <property name="patterns">
+                    <list>
+                             <value>com\.demo\.spring\.test\.IHelloWorld\.execute</value>
+                    </list>
+             </property>
+             <property name="advice">
+                           <ref local="myThrowsAdvice" />
+             </property>
+ </bean>
+ <bean id="myAfterAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+             <property name="patterns">
+                       <list>
+                                <value>com\.demo\.spring\.test\.IHelloWorld\.execute</value>
+                       </list>
+             </property>
+             <property name="advice">
+                         <ref local="myAfterAdvice" />
+             </property>
+ </bean>
+ 
+ <bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+              <property name="proxyInterfaces" value="com.demo.spring.test.IHelloWorld"/>
+              <property name="target" ref="helloWorld"/>
+              <property name="interceptorNames">
+                        <list>
+                              <value>myBeforeAdvisor</value>
+                              <value>myAfterAdvisor</value>
+                              <value>myAroundAdvisor</value>
+                              <value>myThrowsAdvisor</value>
+                       </list>
+              </property>
+ </bean>
+</beans>
